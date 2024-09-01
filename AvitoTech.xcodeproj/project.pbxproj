@@ -10,7 +10,6 @@
 		82A7EF4A2C848E0700BE495F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF492C848E0700BE495F /* AppDelegate.swift */; };
 		82A7EF4C2C848E0700BE495F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF4B2C848E0700BE495F /* SceneDelegate.swift */; };
 		82A7EF4E2C848E0700BE495F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF4D2C848E0700BE495F /* ViewController.swift */; };
-		82A7EF512C848E0700BE495F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF502C848E0700BE495F /* Base */; };
 		82A7EF532C848E0A00BE495F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF522C848E0A00BE495F /* Assets.xcassets */; };
 		82A7EF562C848E0A00BE495F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF552C848E0A00BE495F /* Base */; };
 		82A7EF5E2C848E9600BE495F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF5D2C848E9600BE495F /* .gitignore */; };
@@ -21,7 +20,6 @@
 		82A7EF492C848E0700BE495F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A7EF4B2C848E0700BE495F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		82A7EF4D2C848E0700BE495F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		82A7EF502C848E0700BE495F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82A7EF522C848E0A00BE495F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A7EF552C848E0A00BE495F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82A7EF572C848E0A00BE495F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				82A7EF492C848E0700BE495F /* AppDelegate.swift */,
 				82A7EF4B2C848E0700BE495F /* SceneDelegate.swift */,
 				82A7EF4D2C848E0700BE495F /* ViewController.swift */,
-				82A7EF4F2C848E0700BE495F /* Main.storyboard */,
 				82A7EF522C848E0A00BE495F /* Assets.xcassets */,
 				82A7EF542C848E0A00BE495F /* LaunchScreen.storyboard */,
 				82A7EF572C848E0A00BE495F /* Info.plist */,
@@ -131,7 +128,6 @@
 				82A7EF5E2C848E9600BE495F /* .gitignore in Resources */,
 				82A7EF532C848E0A00BE495F /* Assets.xcassets in Resources */,
 				82A7EF562C848E0A00BE495F /* Base in Resources */,
-				82A7EF512C848E0700BE495F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		82A7EF4F2C848E0700BE495F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82A7EF502C848E0700BE495F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		82A7EF542C848E0A00BE495F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +289,6 @@
 				INFOPLIST_FILE = AvitoTech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,9 +298,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = studying.AvitoTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,7 +320,6 @@
 				INFOPLIST_FILE = AvitoTech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,9 +329,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = studying.AvitoTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
