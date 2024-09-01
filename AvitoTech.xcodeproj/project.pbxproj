@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		82A7EF4A2C848E0700BE495F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF492C848E0700BE495F /* AppDelegate.swift */; };
 		82A7EF4C2C848E0700BE495F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF4B2C848E0700BE495F /* SceneDelegate.swift */; };
-		82A7EF4E2C848E0700BE495F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF4D2C848E0700BE495F /* ViewController.swift */; };
 		82A7EF532C848E0A00BE495F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF522C848E0A00BE495F /* Assets.xcassets */; };
 		82A7EF562C848E0A00BE495F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF552C848E0A00BE495F /* Base */; };
 		82A7EF5E2C848E9600BE495F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EF5D2C848E9600BE495F /* .gitignore */; };
+		82A7EF612C84946700BE495F /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF602C84946700BE495F /* AdViewController.swift */; };
+		82A7EF662C8494E700BE495F /* AdInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF652C8494E700BE495F /* AdInteractor.swift */; };
+		82A7EF682C8494ED00BE495F /* AdPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF672C8494ED00BE495F /* AdPresenter.swift */; };
+		82A7EF6A2C849EC300BE495F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF692C849EC300BE495F /* Router.swift */; };
+		82A7EF6C2C84A46500BE495F /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7EF6B2C84A46500BE495F /* Assembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82A7EF462C848E0700BE495F /* AvitoTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A7EF492C848E0700BE495F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A7EF4B2C848E0700BE495F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82A7EF4D2C848E0700BE495F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82A7EF522C848E0A00BE495F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A7EF552C848E0A00BE495F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82A7EF572C848E0A00BE495F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82A7EF5D2C848E9600BE495F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		82A7EF602C84946700BE495F /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		82A7EF652C8494E700BE495F /* AdInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInteractor.swift; sourceTree = "<group>"; };
+		82A7EF672C8494ED00BE495F /* AdPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPresenter.swift; sourceTree = "<group>"; };
+		82A7EF692C849EC300BE495F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		82A7EF6B2C84A46500BE495F /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,48 @@
 			children = (
 				82A7EF492C848E0700BE495F /* AppDelegate.swift */,
 				82A7EF4B2C848E0700BE495F /* SceneDelegate.swift */,
-				82A7EF4D2C848E0700BE495F /* ViewController.swift */,
+				82A7EF692C849EC300BE495F /* Router.swift */,
+				82A7EF6B2C84A46500BE495F /* Assembly.swift */,
+				82A7EF5F2C84937400BE495F /* AdModule */,
 				82A7EF522C848E0A00BE495F /* Assets.xcassets */,
 				82A7EF542C848E0A00BE495F /* LaunchScreen.storyboard */,
 				82A7EF572C848E0A00BE495F /* Info.plist */,
 			);
 			path = AvitoTech;
+			sourceTree = "<group>";
+		};
+		82A7EF5F2C84937400BE495F /* AdModule */ = {
+			isa = PBXGroup;
+			children = (
+				82A7EF622C84948D00BE495F /* View */,
+				82A7EF632C84949F00BE495F /* Interactor */,
+				82A7EF642C8494A900BE495F /* Presenter */,
+			);
+			path = AdModule;
+			sourceTree = "<group>";
+		};
+		82A7EF622C84948D00BE495F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A7EF602C84946700BE495F /* AdViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82A7EF632C84949F00BE495F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				82A7EF652C8494E700BE495F /* AdInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		82A7EF642C8494A900BE495F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				82A7EF672C8494ED00BE495F /* AdPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82A7EF4E2C848E0700BE495F /* ViewController.swift in Sources */,
+				82A7EF612C84946700BE495F /* AdViewController.swift in Sources */,
+				82A7EF662C8494E700BE495F /* AdInteractor.swift in Sources */,
+				82A7EF682C8494ED00BE495F /* AdPresenter.swift in Sources */,
+				82A7EF6C2C84A46500BE495F /* Assembly.swift in Sources */,
 				82A7EF4A2C848E0700BE495F /* AppDelegate.swift in Sources */,
+				82A7EF6A2C849EC300BE495F /* Router.swift in Sources */,
 				82A7EF4C2C848E0700BE495F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
