@@ -27,10 +27,10 @@ struct AdScreenInfo: Decodable {
     
     struct AdElement: Decodable {
         let title: String
-        let description: String
+        let description: String?
         let icon: Icon
         let price: String
-        let isSelected: String
+        let isSelected: Bool
     }
     
     struct Icon: Decodable {
