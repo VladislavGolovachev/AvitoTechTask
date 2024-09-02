@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class AdViewController: UIViewController {
     var presenter: AdViewPresenterProtocol?
@@ -13,6 +14,7 @@ final class AdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
         presenter?.prefetchScreenInfo()
     }
     
